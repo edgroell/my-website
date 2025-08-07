@@ -216,7 +216,7 @@ section {
     padding: 20px;
 }
 
-#clients .col-2-3 [class*='col-'] {
+#stack .col-2-3 [class*='col-'] {
     padding: 0;
 }
 
@@ -1379,7 +1379,7 @@ blockquote {
 
 /* --------- 6.6 Clients ---------- */
 
-#clients a {
+#stack a {
     display: block;
     text-align: center;
     position: relative;
@@ -1388,7 +1388,7 @@ blockquote {
     color: #fff;
 }
 
-#clients img {
+#stack img {
     display: inline-block;
     padding: 15px 25px;
 }
@@ -1410,7 +1410,7 @@ blockquote {
     transition: all 0.3s ease-out;
 }
 
-#clients a:hover .client-overlay {
+#stack a:hover .client-overlay {
     opacity: 1;
 }
 
