@@ -18,11 +18,11 @@
 - 5.3 Divider
 6. Landing Page Sections
 - 6.1 Features
-- 6.2 Testimonials
+- 6.2 About
 - 6.3 Gallery
-- 6.4 Video
-- 6.5 Clients
-- 6.6 Pricing Table
+- 6.4 Profile (video)
+- 6.5 Advocacy
+- 6.6 Contact
 7. Footer
 
 
@@ -432,7 +432,6 @@ section {
 .play-icon:before {
     font-family: 'fontawesome';
     content: '\f144';
-    speak: none;
     font-size: 74px;
     line-height: 110px;
     font-style: normal;
@@ -707,6 +706,8 @@ a img {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 a img:hover {
@@ -990,7 +991,9 @@ blockquote {
 
 #gallery a:hover img {
     opacity: 0.15;
+    -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #gallery a:before {
@@ -1012,7 +1015,6 @@ blockquote {
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
-    vertical-align: middle;
 }
 
 #gallery a:hover:before {
@@ -1271,7 +1273,7 @@ blockquote {
     }
 }
 
-/* --------- 6.5 Video ---------- */
+/* --------- 6.5 Profile (video) ---------- */
 
 #video-box {
     color:#fff;
@@ -1377,7 +1379,7 @@ blockquote {
     cursor: pointer;
 }
 
-/* --------- 6.6 Clients ---------- */
+/* --------- 6.6 Advocacy ---------- */
 
 #stack a {
     display: block;
@@ -1396,8 +1398,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1423,9 +1424,9 @@ blockquote {
     display: inline-block;
 }
 
-/* --------- 6.7 Pricing Table ---------- */
+/* --------- 6.7 Contact ---------- */
 
-.pricing-block-content {
+.contact-block-content {
     background: #fff;
     padding: 25px 0 25px 0;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
@@ -1435,27 +1436,27 @@ blockquote {
 }
 
 
-.pricing-block ul {
+.contact-block ul {
     list-style: none;
     margin: 25px 0 25px 0;
 }
 
-.pricing-block li {
+.contact-block li {
     padding: 14px 0;
     border-bottom: 1px dotted #e1e1e1;
 }
 
-.pricing-block li:last-of-type {
+.contact-block li:last-of-type {
     border:none;
 }
 
-.pricing-block h3 {
+.contact-block h3 {
     font-size:17px;
     text-transform:uppercase;
     padding-bottom:0;
 }
 
-.pricing-sub {
+.contact-sub {
     font-style: italic;
     color:#ccc;
     margin:0 0 25px 0;
