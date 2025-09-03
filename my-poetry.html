@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page Title-->
+    <title>Poetry — by Ed Groell</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* Poetry grid specific styles */
+        .poems-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+
+        .poem {
+            background: transparent;
+            padding: 18px 12px;
+            border-left: 4px solid #d4b24a;
+        }
+
+        .poem h4 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+
+        .poem p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .poems-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .poems-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated"></div>
+    <div class="right-border wow fadeInRight animated"></div>
+    <div class="bottom-border wow fadeInUp animated"></div>
+    <div class="left-border wow fadeInLeft animated"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" title="LinkedIn" href="https://www.linkedin.com/in/edgroell/">
+                                    <i class="fab fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" title="GitHub" href="https://github.com/edgroell">
+                                    <i class="fab fa-github fa-1x"></i><span>GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" title="Bluesky" href="https://bsky.app/profile/edgroell.com">
+                                    <i class="fab fa-bluesky fa-1x"></i><span>Bluesky</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" title="Newsletter" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7328509147346341889">
+                                    <i class="fas fa-paper-plane fa-1x"></i><span>Newsletter</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <!--<li>
+                                <a href="#gallery">Gallery</a>
+                            </li>-->
+                            <li>
+                                <a href="#profile">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#stack">Stack</a>
+                            </li>
+                            <li>
+                                <a href="#advocacy">Advocacy</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <section id="poetry" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-38">
+                    <div class="section-heading">
+                        <h3>PASSION</h3>
+                        <h2 class="section-title">Poetry</h2>
+                        <p class="section-subtitle">A repository of poems written over the past years...</p>
+                    </div>
+                </div>
+
+                <div class="col-2-3" style="width: 80%;">
+
+                    <!-- Poems list -->
+
+                    <div class="poems-grid">
+
+                    <article class="poem">
+                        <h4><b>O Celest —</b></h4>
+                        <p>
+                            So peaceful, so wonderful<br>
+                            I stand before you as a fool<br>
+                            I'd let go of my weight<br>
+                            And see you as my fate<br>
+                            <br>
+                            As if time could stand still<br>
+                            Yet you proclaim your will<br>
+                            A reminder we shall say<br>
+                            That we stand in your way<br>
+                            <br>
+                            What are we, in this scheme?<br>
+                            If not merely a meme<br>
+                            But for all we can see<br>
+                            There's no doubt you're the Sea<br>
+                            <br>
+                            Give me hope, give me peace<br>
+                            For my heart is 'n abyss<br>
+                            Always prompt to be blessed<br>
+                            With your touch, O Celest!
+                        </p>
+                    </article>
+                    
+                    <article class="poem">
+                        <h4><b>My Moonlight —</b></h4>
+                        <p>
+                            So shiny and so bright<br>
+                            You stand here in the night<br>
+                            For no doubt you're divine<br>
+                            So let there be your light<br>
+                            No shadow is at sight<br>
+                            And eyes are in excite<br>
+                            All the stars realign<br>
+                            When you're here, my moonlight.
+                        </p>
+                    </article>
+                    
+                    <article class="poem">
+                        <h4><b>My Eye —</b></h4>
+                        <p>
+                            They say...<br>
+                            The eye is the window to the soul<br>
+                            The eye is the gate to your true self<br>
+                            The eye communicates so many emotions<br>
+                            The eye is the lamp to the body<br>
+                            If the eye is healthy, the whole body is full of light<br>
+                            If the eye is unhealthy, the whole body is full of darkness<br>
+                            And so...<br>
+                            Here is my gate, and here is the key<br>
+                            Do you see me? Do you read me?<br>
+                            Do you even find me?<br>
+                            Or do you stare blindly?<br>
+                            Hypnotized by the depth of it all<br>
+                            By the abyss of my soul.
+                        </p>
+                    </article>
+                    
+                    <article class="poem">
+                        <h4><b>My Eli —</b></h4>
+                        <p>
+                            Tu n'as peut-être que trois ans<br>
+                            Mais ton coeur est déjà si grand<br>
+                            Quel plaisir que de te voir grandir<br>
+                            Toi si belle, avec ton grand sourire<br>
+                            Il me tarde de te découvrir<br>
+                            Ton esprit, ton être, tes plaisirs<br>
+                            Tu me combles de fierté<br>
+                            J'en suis comme ensorcelé<br>
+                            Tu resteras à jamais ma chérie<br>
+                            Ô toi ma petite Eli<br>
+                            <br>
+                            Papa... Qui t'aime plus que tout ❤️
+                        </p>
+                    </article>
+                    
+                    <article class="poem">
+                        <h4><b>My Little Lana —</b></h4>
+                        <p>
+                            Bienvenue à toi<br>
+                            Ma petite Lana<br>
+                            Fraîchement arrivée là<br>
+                            Voici maintenant 3 mois<br>
+                            Je ne serai jamais las<br>
+                            De te tenir dans mes bras<br>
+                            Car ici ou là-bas<br>
+                            Que ce soit clair pour toi<br>
+                            Je serai toujours là<br>
+                            Car mon coeur est à toi<br>
+                            <br>
+                            Et je ne saurai faillir<br>
+                            Car pour moi ce serait bien pire <br>
+                            Ce serait comme te mentir<br>
+                            <br>
+                            Un amour de papa<br>
+                            Ça ne s'explique pas<br>
+                            Alors tu comprendras<br>
+                            Qu'à cette question-là<br>
+                            Je n'y manquerai pas <br>
+                            De te dire mille fois<br>
+                            Mon amour pour toi<br>
+                            Ma petite Lana.
+                        </p>
+
+
+                    </article>
+
+                    <article class="poem">
+                        <h4><b>My Lana —</b></h4>
+                        <p>
+                            Ma Chérie, mon Amour,<br>
+                            Un an que tu as vu le jour<br>
+                            Un an de passé avec toi<br>
+                            Mon cœur est rempli de joie.<br>
+                            <br>
+                            Désormais j'en suis sûr<br>
+                            Rien de plus gratifiant<br>
+                            Que de te voir souriant<br>
+                            Tout mon être se rassure.<br>
+                            <br>
+                            En ce jour si spécial,<br>
+                            Que tu sois célébrée<br>
+                            Car voilà, mon idéal<br>
+                            Reste que tu sois comblée.<br>
+                            <br>
+                            Papa, qui t'aime comme un fou ❤️
+                        </p>
+                    </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--End Main Content Area-->
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">Made with ❤️ by <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/edgroell/">Ed Groell</a></p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" title="LinkedIn" href="https://www.linkedin.com/in/edgroell/">
+                        <i class="fab fa-linkedin fa-1x"></i><span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" title="GitHub" href="https://github.com/edgroell">
+                        <i class="fab fa-github fa-1x"></i><span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" title="Bluesky" href="https://bsky.app/profile/edgroell.com">
+                        <i class="fab fa-bluesky fa-1x"></i><span>Bluesky</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" title="Newsletter" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7328509147346341889">
+                        <i class="fas fa-paper-plane fa-1x"></i><span>Newsletter</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
+
+</body>
+</html>
