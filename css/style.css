@@ -95,8 +95,8 @@ figure {
 }
 
 .page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
-    padding: 11px;
-    background: #ccc;
+    padding: 7px;
+    background: #686666;
 }
 
 .page-border .bottom-border, .page-border .top-border {
