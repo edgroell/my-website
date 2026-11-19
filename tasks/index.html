@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON//TASKS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-floor" aria-hidden="true"></div>
+
+  <main class="hud">
+    <header class="hud-header">
+      <h1 class="title glitch" data-text="NEON//TASKS">NEON//TASKS</h1>
+      <p class="subtitle">// TASK MANAGEMENT UNIT v2.077</p>
+    </header>
+
+    <section class="panel input-panel">
+      <form id="task-form" autocomplete="off">
+        <input
+          id="task-input"
+          type="text"
+          maxlength="120"
+          placeholder="> ENTER NEW DIRECTIVE_"
+          aria-label="New task"
+        />
+        <button type="submit" class="btn btn-add">EXECUTE</button>
+      </form>
+    </section>
+
+    <section class="panel list-panel">
+      <div class="toolbar">
+        <div class="filters">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="active">ACTIVE</button>
+          <button class="filter" data-filter="done">DONE</button>
+        </div>
+        <span id="counter" class="counter">0/0 REMAINING</span>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty-state">NO TASKS LOADED. SYSTEM IDLE.</p>
+
+      <button id="clear-done" class="btn btn-clear">PURGE COMPLETED</button>
+    </section>
+
+    <footer class="hud-footer">
+      <span>STATUS: <span class="ok">ONLINE</span></span>
+      <span id="clock">00:00:00</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
